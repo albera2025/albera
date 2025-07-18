@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Site institucional da Albera Group">
+  <meta property="og:title" content="ALBERA Group">
+  <meta property="og:description" content="Inovação, qualidade e compromisso em cada detalhe.">
+  <meta property="og:image" content="albera_group_logo.png">
+  <title>ALBERA Group</title>
+  <link rel="icon" href="albera_group_logo.png" type="image/png" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom right, #f8f8f8, #eaeaea);
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    header {
+      padding: 60px 20px 40px;
+      text-align: center;
+      background-color: #ffffff;
+      box-shadow: 0px 2px 6px rgba(0,0,0,0.08);
+    }
+
+    header img {
+      max-width: 360px;
+      width: 90%;
+      height: auto;
+      margin-bottom: 30px;
+    }
+
+    p.slogan {
+      font-size: 1.4em;
+      color: #444;
+      margin: 0 auto;
+      max-width: 700px;
+    }
+
+    main {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    main p {
+      font-size: 1.1em;
+      max-width: 600px;
+      line-height: 1.6;
+    }
+
+    .contact-button {
+      margin-top: 30px;
+      background-color: #0077cc;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .contact-button:hover {
+      background-color: #005fa3;
+    }
+
+    footer {
+      background-color: #ffffff;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      border-top: 1px solid #ddd;
+    }
+
+    @media (max-width: 600px) {
+      header img {
+        max-width: 280px;
+      }
+
+      .contact-button {
+        width: 80%;
+        font-size: 0.95em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="albera_group_logo.png" alt="Logo Albera Group">
+    <p class="slogan">Inovação, qualidade e compromisso em cada detalhe.</p>
+  </header>
+
+  <main>
+    <p>
+      A ALBERA é uma empresa brasileira com atuação em múltiplos segmentos.<br>
+      Atuamos com inteligência e versatilidade para entregar soluções que geram valor real aos nossos clientes.<br><br>
+      Este site está em construção. Em breve, mais novidades.
+    </p>
+    <a class="contact-button" href="mailto:albera.comservice@gmail.com">Entrar em contato</a>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Albera Group. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

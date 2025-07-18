@@ -4,31 +4,52 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Site institucional da Albera Empreendimentos LTDA">
+  <meta property="og:title" content="ALBERA Empreendimentos LTDA">
+  <meta property="og:description" content="Inovação, qualidade e compromisso em cada detalhe.">
+  <meta property="og:image" content="albera_logo_horizontal.png">
   <title>ALBERA Empreendimentos</title>
+  <link rel="icon" href="albera_logo_horizontal.png" type="image/png" />
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Inter', sans-serif;
       background: linear-gradient(to bottom right, #f8f8f8, #eaeaea);
       color: #222;
       display: flex;
       flex-direction: column;
       min-height: 100vh;
+      animation: fadeIn 1s ease-in;
     }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
     header {
       padding: 40px 20px 20px;
       text-align: center;
       background-color: #ffffff;
+      box-shadow: 0px 2px 6px rgba(0,0,0,0.08);
     }
+
     header img {
-      width: 150px;
+      width: 260px;
       height: auto;
       margin-bottom: 20px;
     }
+
     p.slogan {
       font-size: 1.2em;
       color: #555;
     }
+
     main {
       flex-grow: 1;
       display: flex;
@@ -38,11 +59,29 @@
       text-align: center;
       flex-direction: column;
     }
+
     main p {
       font-size: 1.1em;
       max-width: 600px;
       line-height: 1.6;
     }
+
+    .contact-button {
+      margin-top: 30px;
+      background-color: #0077cc;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .contact-button:hover {
+      background-color: #005fa3;
+    }
+
     footer {
       background-color: #ffffff;
       text-align: center;
@@ -50,20 +89,22 @@
       font-size: 0.9em;
       border-top: 1px solid #ddd;
     }
-    .domains a {
-      color: #0077cc;
-      text-decoration: none;
-      display: block;
-      margin: 5px 0;
-    }
-    .domains a:hover {
-      text-decoration: underline;
+
+    @media (max-width: 600px) {
+      header img {
+        width: 200px;
+      }
+
+      .contact-button {
+        width: 80%;
+        font-size: 0.95em;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="albera_logo.png" alt="Logo Albera">
+    <img src="albera_logo_horizontal.png" alt="Logo Albera">
     <p class="slogan">Inovação, qualidade e compromisso em cada detalhe.</p>
   </header>
 
@@ -73,13 +114,10 @@
       Atuamos com inteligência e versatilidade para entregar soluções que geram valor real aos nossos clientes.<br><br>
       Este site está em construção. Em breve, mais novidades.
     </p>
+    <a class="contact-button" href="mailto:albera.comservice@gmail.com">Entrar em contato</a>
   </main>
 
   <footer>
-    <div class="domains">
-      <strong>Nosso domínio oficial:</strong><br>
-      <a href="https://www.albera.com.br">www.albera.com.br</a>
-    </div>
     <p>&copy; 2025 Albera Empreendimentos LTDA. Todos os direitos reservados.</p>
   </footer>
 </body>
